@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="assets/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    
+        <div id="fb-root"></div>
+        <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=1711942948878214';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        
+        </script>
+
+
+
+
+
+<div id="main_wrapper">
+    <nav class="navbar is-primary">
+        <div class="container">
+            <div class="navbar-brand">
+            <a class="navbar-item" href="">
+                <img src="http:://yourlogogoeshere" alt="Your Logo Here" width="112" height="28">
+            </a>
+            <div class="navbar-burger burger" data-target="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </div>
+        
+            <div id="mobileMenu" class="navbar-menu">
+            <div class="navbar-start">
+
+                    <div id="navSearch" class="navbar-item control has-icons-right">
+                            <input class="input" type="email" placeholder="Search Site Here">
+
+                            <span class="icon navbar-item is-small is-right">
+                              <i class="fa fa-search"></i>
+                            </span>
+                          </div>
+            </div>
+        
+            <div class="navbar-end">
+                
+                <a class="navbar-item" href="index.html">
+                    Register
+                    </a>
+                    <a class="navbar-item is-active" href="login.html">
+                    Login
+                    </a>
+                    
+            </div>
+            </div>
+        </div>
+    </nav>
+
+   <section class="hero" id="main_content">
+        <div class="hero-body">
+          <div class="container">             
+                <div class="login_wrapper animated flipInY shadow">
+                        <div class="fb-login-button" data-width="400" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>
+                        <div id="spinner"> <i class="fa fa-spinner fa-spin"></i> </div>
+                        <h3 class="is-size-4 has-text-black" style="text-align:center;"> Login Here </h3>
+                        <form action="" method="post">
+                            <div class="field">
+                                <label for="Username"> Username: </label>
+                                <input type="text" placeholder="Enter Username" class="input" />
+                            </div>
+                            <div class="field">
+                                <label for="Username"> Password: </label>
+                                <input type="password" class="input" placeholder="Enter Password"/>
+                            </div>
+    
+                            <div class="field is-horizontal">
+                                    <div class="field-body">
+                                      <div class="field">
+                                        <div class="control">
+                                          <button class="button is-primary">
+                                            Login
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                        </form>
+                        <div class="form-footer">Don't Have an Account?  <a href="#">Register </a> </div>
+                    </div>
+          </div>
+        </div>
+      </section>
+
+   <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <p>
+              <strong>Authentication System using FB auth </strong> by <a href="https://Algorithm-Sam.github.com">Ohidoa Oluwatobi Samuel</a>. The source code is available on my repository
+            </p>
+          </div>
+        </div>
+      </footer>
+</div>
+    <!-- End of the main wrapper that wraps the website -->
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
